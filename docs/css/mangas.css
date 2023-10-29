@@ -1,0 +1,108 @@
+body {
+    background-color: #C7B6DD;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #A89BF6;
+    position: fixed; /* Make it stick/fixed */
+    width: 99%; /* Full width */
+    top: 10px;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+.topnav a:hover {
+    background-color: #be93f7;
+    color: black;
+}
+  
+  /* Active/current link */
+.topnav a.active {
+    background-color: #57092A;
+    color: white;
+}
+  
+.topnav a.active:hover {
+      background-color: #470420;
+}  
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a{
+      float: none;
+      background-color: #C8C4F6;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+  }
+}
+.title{
+    text-align: center;
+    font-size: 38px;
+    margin: 0;
+}
+
+.cover {
+    padding-left: 20px;
+    top: 80px;
+    height:50%;
+    position: fixed;
+    float: left;
+}
+
+.synopsis{
+    margin-top: 90px;
+    margin-left: 400px;
+    font-size: 30px;
+}
+
+.episodes{
+    margin-left: 400px;
+    font-size: 90px;
+    border-radius: 30px;
+    background-color: #1A4D57;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+}
+
+.responsive{
+    display: block;
+    margin: 25px;
+    border-radius: 200px;
+    background-color: #57092A;
+    text-align: center;
+}
+
+a {
+    color: snow;
+    text-decoration: none;
+}
+  
+a:hover{
+    color: snow;
+    text-decoration: none;
+}
+
+a::after{
+    color: snow;
+    text-decoration: none;
+}
