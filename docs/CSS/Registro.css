@@ -1,3 +1,8 @@
+body{
+    background-color: #1A4D57;
+    color: white;
+}
+
 * {box-sizing: border-box}
 
 /* Full-width input fields */
