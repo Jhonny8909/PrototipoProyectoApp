@@ -1,0 +1,138 @@
+body {
+    background-color: #1A4D57;
+}
+
+* {box-sizing: border-box;}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #C7B6DD;
+  position: fixed; /* Make it stick/fixed */
+  width: 99%; /* Full width */
+  top: 10px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+  background-color: #be93f7;
+  color: black;
+}
+
+/* Active/current link */
+.topnav a.active {
+  background-color: #57092A;
+  color: white;
+}
+
+.topnav a.active:hover {
+    background-color: #470420;
+}
+
+/* Style the input container */
+.topnav .search-container {
+  float: right;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button:hover {
+  background: #C8C4F6;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+.topnav .search-container {
+    float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    background-color: #C8C4F6;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+}
+}
+
+.topnav a.split {
+    float: right;
+    background-color: #A30047;
+    color: white;
+}
+.topnav a.split:hover{
+    background-color: #57092A;
+}
+
+/* Style the button inside the input container */
+.topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #A89BF6;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.category {
+    color: aliceblue;
+    font-size: xxx-large;
+}
+  
+div.gallery img {
+    width: auto;
+    height: 500px;
+}
+  
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 19.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    padding-left: 50px;
+}
